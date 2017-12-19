@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>ДЗ 6 ТЕМИ ОПЕРАТОРИ</div>
+<script>
+    //1. Якщо змінна a більше або дорівнює нулю, то виведіть 'Вірно', інакше виведіть 'Невірно'. Перевірте роботу скрипта при a, що дорівнює 1, 0, -3.
+
+    function checkNumber(a) {
+        if (a < 0) {
+            alert("false");
+        } else {
+            alert("true");
+        }
+    }
+
+    //2. Якщо змінна a дорівнює нулю або дорівнює двом, то додайте до неї 7, інакше поділіть її на 10. Виведіть нове значення змінної на екран. Перевірте роботу скрипта при a, що дорівнює 5, 0, -3, 2.
+
+    function checkOherNumber(a) {
+        if (a == 0 || a == 2) {
+            alert(+a + 7);
+        } else {
+            alert(a / 10);
+        }
+    }
+
+    //3. Дано рядок з цифрами, наприклад, '12345'. Перевірте, що першим символом цього рядка є цифра 1, 2 або 3. Якщо це так - виведіть "так", в іншому випадку виведіть "ні".
+
+    function checkFirstSymbol(a) {
+        if (a.charAt(0) == 1 || a.charAt(0) == 2 || a.charAt(0) == 3) {
+            alert("TAK");
+        } else {
+            alert("HI");
+        }
+    }
+
+    checkNumber(prompt("Enter a number which >=0", ""));
+    checkOherNumber(prompt("Enter other number", ""));
+    checkFirstSymbol("12345");
+
+</script>
+<style>
+    div {
+        margin: 0 auto;
+    }
+</style>
+</body>
+</html>
